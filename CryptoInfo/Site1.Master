@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="CryptoInfo.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <link  rel="stylesheet" id="mainCss" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <nav class="nav">
+            <p>Crypto Info</p>
+        <ul>
+            <li><a href="Default.aspx">Home</a></li>
+            <li><a href="Learn.aspx">Learn</a></li>
+            <li><a href="Prices.aspx">Prices</a></li>
+            <li><a href="About.aspx">About</a></li>
+            <li><a href="Contact.aspx">Contact</a></li>
+            <li><a href="CreateAccount.aspx">Account</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img alt="none" id="headerImg" runat="server" />
+        <div class="blueBox">
+                    
+            <form id="form1" runat="server">
+                    <div>
+                          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                          </asp:ContentPlaceHolder>
+                    </div>
+            </form>
+        </div>
+    </main>
+        <footer>
+            <p><small>Copyright &copy; Crypto Info 2023</small></p>
+        </footer>
+    <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+    <script src="https://widgets.coingecko.com/coingecko-coin-heatmap-widget.js"></script>
+</body>
+</html>

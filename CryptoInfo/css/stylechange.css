@@ -1,0 +1,760 @@
+﻿body {
+    background-image: url(../images/gradient-purple-blue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.nav a {
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 30px;
+    position: relative;
+}
+
+.nav {
+    background: deepskyblue;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 180px;
+    top: 50px;
+    border-radius: 10px;
+    line-height: 10px;
+    margin-bottom: 100px;
+}
+
+    .nav p {
+        font-size: 25px;
+        position: relative;
+        right: 20px;
+        font-family: "Audiowide", sans-serif;
+    }
+
+    .nav ul {
+        list-style: none;
+        margin: 0;
+    }
+
+    .nav > ul > li {
+        float: left;
+        position: relative;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: black;
+        padding: 15px 20px;
+        display: block;
+    }
+
+    .nav ul li:hover a {
+        background: #34495a;
+    }
+
+
+.blueBox {
+    background-color: deepskyblue;
+    height: 740px;
+    width: 1100px;
+    position: relative;
+    left: 180px;
+    bottom: 130px;
+    border-radius: 10px;
+    margin-top: -25px;
+}
+
+.box1 {
+    height: 500px;
+    width: 300px;
+    position: relative;
+    top: 80px;
+    left: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/learn.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+    .box1 img {
+        height: 500px;
+        width: 300px;
+    }
+
+    .box1 p {
+        opacity: 0;
+        font-size: 3rem;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+
+    .box1:hover {
+        box-shadow: 0 0 0 300px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .box1:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+
+.box2 {
+    height: 500px;
+    width: 300px;
+    position: relative;
+    left: 400px;
+    bottom: 420px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/prices.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+    .box2 img {
+        height: 500px;
+        width: 300px;
+    }
+
+    .box2 p {
+        opacity: 0;
+        font-size: 3rem;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+    }
+
+    .box2:hover {
+        box-shadow: 0 0 0 300px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .box2:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+
+.box3 {
+    height: 500px;
+    width: 300px;
+    position: relative;
+    left: 750px;
+    bottom: 920px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/about.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+    .box3 img {
+        height: 500px;
+        width: 300px;
+    }
+
+    .box3 p {
+        opacity: 0;
+        font-size: 3rem;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+    }
+
+    .box3 img:hover {
+        opacity: .5;
+    }
+
+    .box3:hover {
+        box-shadow: 0 0 0 300px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .box3:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+.header {
+    height: 90px;
+    width: 500px;
+    background-color: navy;
+    position: relative;
+    left: 290px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 79px;
+    top: 10px;
+    font-size: 35px;
+    font-family: "Audiowide", sans-serif;
+}
+
+.bitcoin {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    top: 20px;
+    left: 39px;
+    background-image: url(../images/bitcoin-btc-logo.png);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .bitcoin p {
+        opacity: 0;
+        font-size: 15px;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+    }
+
+    .bitcoin img:hover {
+        opacity: .5;
+    }
+
+    .bitcoin:hover {
+        box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .bitcoin:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+.ethereum {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    left: 308px;
+    bottom: 174px;
+    background-image: url(../images/ethereum-eth-logo.png);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .ethereum p {
+        opacity: 0;
+        font-size: 15px;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+    }
+
+    .ethereum img:hover {
+        opacity: .5;
+    }
+
+    .ethereum:hover {
+        box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .ethereum:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+.ripple {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    left: 580px;
+    bottom: 373px;
+    background-image: url(../images/xrp-xrp-logo.png);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .ripple p {
+        opacity: 0;
+        font-size: 15px;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ripple img:hover {
+        opacity: .5;
+    }
+
+    .ripple:hover {
+        box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .ripple:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+.litecoin {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    left: 850px;
+    bottom: 553px;
+    background-image: url(../images/litecoin-ltc-logo.png);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .litecoin p {
+        opacity: 0;
+        font-size: 15px;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+    }
+
+    .litecoin img:hover {
+        opacity: .5;
+    }
+
+    .litecoin:hover {
+        box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .litecoin:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+
+
+.avalanche {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    bottom: 530px;
+    left: 39px;
+    background-image: url(../images/avalanche-avax-logo.png);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .avalanche p {
+        opacity: 0;
+        font-size: 15px;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+    }
+
+    .avalanche img:hover {
+        opacity: .5;
+    }
+
+    .avalanche:hover {
+        box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .avalanche:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+.tether {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    bottom: 512px;
+    left: 49px;
+    background-image: url(../images/tether-usdt-logo.png);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .tether p {
+        opacity: 0;
+        font-size: 15px;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+    }
+
+    .tether img:hover {
+        opacity: .5;
+    }
+
+    .tether:hover {
+        box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .tether:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+.bnb {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    bottom: 910px;
+    left: 310px;
+    background-image: url(../images/bnb-bnb-logo.png);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .bnb p {
+        opacity: 0;
+        font-size: 15px;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+    }
+
+    .bnb img:hover {
+        opacity: .5;
+    }
+
+    .bnb:hover {
+        box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .bnb:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+.cardano {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    bottom: 890px;
+    left: 310px;
+    background-image: url(../images/cardano-ada-logo.png);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .cardano p {
+        opacity: 0;
+        font-size: 15px;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+    }
+
+    .cardano img:hover {
+        opacity: .5;
+    }
+
+    .cardano:hover {
+        box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .cardano:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+.dogecoin {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    bottom: 1285px;
+    left: 590px;
+    background-image: url(../images/dogecoin-doge-logo.png);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .dogecoin p {
+        opacity: 0;
+        font-size: 15px;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+    }
+
+    .dogecoin img:hover {
+        opacity: .5;
+    }
+
+    .dogecoin:hover {
+        box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .dogecoin:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+.polygon {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    bottom: 1470px;
+    left: 850px;
+    background-image: url(../images/polygon-matic-logo.png);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .polygon p {
+        opacity: 0;
+        font-size: 15px;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+    }
+
+    .polygon img:hover {
+        opacity: .5;
+    }
+
+    .polygon:hover {
+        box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .polygon:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+.solana {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    bottom: 1460px;
+    left: 590px;
+    background-image: url(../images/solana-sol-logo.png);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .solana p {
+        opacity: 0;
+        font-size: 15px;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+    }
+
+    .solana img:hover {
+        opacity: .5;
+    }
+
+    .solana:hover {
+        box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .solana:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+.polkadot {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    bottom: 1660px;
+    left: 840px;
+    background-image: url(../images/polkadot-new-dot-logo.png);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .polkadot p {
+        opacity: 0;
+        font-size: 15px;
+        color: white;
+        transform: scale(0);
+        transition: 0.8s;
+    }
+
+    .polkadot img:hover {
+        opacity: .5;
+    }
+
+    .polkadot:hover {
+        box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.9) inset;
+    }
+
+        .polkadot:hover p {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+main {
+    height: 750px;
+}
+
+section p {
+    font-size: 18px;
+    font-family: 'Audiowide';
+    padding: 10px 10px 10px;
+}
+
+.banner {
+    position: relative;
+    right:1055px;
+    top: 140px;
+}
+
+.widget {
+    width: 1100px;
+}
+
+.heat-map {
+    width: 1100px;
+    position: relative;
+    top: 50px;
+}
+
+.authPnl {
+    position: relative;
+    left: 300px;
+    top: 200px;
+    font-size: 25px;
+    font-family: "Audiowide";
+}
+
+.gvContact {
+    position: relative;
+    left: 100px;
+    top: 80px;
+}
+
+    .gvContact h3 {
+        position: relative;
+        left: 200px;
+    }
+
+        .gvContact h3 p {
+            position: relative;
+            left: 200px;
+        }
+
+.msgsent h1 {
+    position: relative;
+    font-size: 45px;
+    font-family: 'Audiowide';
+    left: 420px;
+}
+
+.msgsent h3 {
+    position: relative;
+    font-size: 15px;
+    font-family: 'Audiowide';
+    left: 120px;
+}
+
+.msgsent p {
+    position: relative;
+    font-size: 15px;
+    font-family: 'Audiowide';
+    left: 120px;
+}
+
+.contactFV {
+    position: relative;
+    left: 700px;
+    bottom: 170px;
+}
+
+.userInfo {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    left: 300px;
+    font-family: 'Audiowide';
+    font-size: 30px;
+}
+
+    .userInfo h2 {
+        position: relative;
+        right: 70px;
+    }
+
+.userAccount {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    left: 200px;
+    font-family: 'Audiowide';
+    font-size: 30px;
+}
+
+    .userAccount h2 {
+        position: relative;
+        left: 75px;
+    }
+
+main img {
+    position: relative;
+    left: 1100px;
+    bottom: 160px;
+
+}
+
+input[type="text"] {
+    width: 300px;
+}
+
+input[type="submit"] {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 215px;
+    top: 10px;
+}
+
+footer {
+    height: 50px;
+    width: 1000px;
+    position: relative;
+    bottom: 80px;
+    left: 230px;
+    background-color: navy;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    line-height: 50px;
+    font-family: "Audiowide", sans-serif
+}
